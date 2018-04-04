@@ -39,6 +39,13 @@ app.get('/about',(req, res) => {
         paragraphe: 'some paragraphe and let me write what i want'
     });
 });
+app.get('/list',(req, res) => {
+    res.render('about',{
+        title: 'LIST',
+        pageTitle : 'Liste Page',
+        paragraphe: 'some list and let me write what i want'
+    });
+});
 
 app.get('/bad', (req, res) => {
 
